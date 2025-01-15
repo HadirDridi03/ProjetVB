@@ -77,11 +77,6 @@ Public Class adminForm
             MessageBox.Show("Le vol sélectionné est introuvable.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
-        txtNumVol.Text = volSelectionne.Numero
-        txtDest.Text = volSelectionne.Destination
-        dtp.Value = volSelectionne.DateHeure
-        nudPlaceDisp.Value = volSelectionne.PlacesDisponibles
-        nudPrix.Value = volSelectionne.Prix
 
         Dim result = MessageBox.Show("Voulez-vous enregistrer les modifications ?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
